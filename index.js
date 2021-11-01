@@ -142,6 +142,7 @@ const eat = new Audio('eat.mp3')
             ctx.fillStyle = 'white'
             ctx.font = '32px Arial'
             ctx.fillText('Game Over!', canvas.width/3.8, canvas.height/2)
+            new Audio('hit.wav').play()
         }
         return gameOver
     }
